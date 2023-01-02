@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!-- 28-10-22 --> <!--to_1-11-22-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+        scroll-behavior: smooth
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Telivigala&family=Archivo&family=Inria+Serif:wght@700&family=Kanit&family=Mulish:wght@600&family=Poppins&family=Roboto&family=Ubuntu+Condensed&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Inria+Serif:wght@700&family=Poppins&family=Roboto&family=Stick+No+Bills&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* header{
+        position: fixed;
+    } */
+
+    nav ul{
+        display: flex;
+        background-color: rgba(79, 81, 69, 0.184);
+        list-style: none;
+        align-items: center;
+        height: 70px;
+    }
+    
+    nav ul a{
+        
+        
+        font-size: 28px;
+        font-family: 'Akaya Telivigala', cursive;
+        font-weight: 100;   
+        padding: 24px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    #logo{
+        height: 100px;
+        margin-left: 45%;
+        
+    }
+
+    .bg{
+        background-image: url("13.jpg");
+        background-size: cover;
+        height:723px;
+        width: 1520px;
+        background-repeat: no-repeat;
+    }
+
+   .global{
+       font-family: 'stick no bills';
+       font-size: 120px;
+       -webkit-text-stroke: 1px rgb(12, 8, 235);
+       margin-top: 2%;
+       color: rgb(255, 255, 255);
+       
+    }
+    .music{ 
+        margin-left: 15%;
+        font-family: 'stick no bills';
+        font-size: 160px;
+        -webkit-text-stroke: 1px whitesmoke;
+        color: rgb(8, 114, 235);
+        
+    }
+    
+    .circle{
+       margin-left: 40%;
+       background-color: rgb(0, 128, 255);
+       border: 2px solid transparent;
+       border-radius: 100%;
+       height: 250px;
+       width: 250px;
+    }
+    
+    .circle p{
+        font-size: 60px;
+        margin-top: 20%;
+       color: aliceblue;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       text-align: center;
+      
+   }
+
+   .bg2{
+    background-image: url("17.jpg");
+    background-size: cover;
+    height: 723px;
+    width: 1520px;
+    
+   }
+
+   .mento{
+        transform: translate(0%, 250px);
+        font-family: 'Abril Fatface', cursive;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 70px;
+        
+        color: rgb(255, 255, 255);
+   }
+
+   .date{
+        transform: translate(0%, 300px);
+        font-family: 'Abril Fatface', cursive;
+        font-size: 70px;
+        color: rgb(255, 255, 255);
+   }
+
+   .dance{
+        float: right;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 70px;
+        
+        color: rgb(255, 255, 255);
+   }
+
+   .nyt{
+    background-color: rgb(189, 43, 226);
+    font-family: 'Abril Fatface', cursive;
+        font-size: 70px;
+        width: 1520px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        color: rgb(255, 255, 255);
+   }
+
+   .bg3 ul{
+    display: flex;
+    background-color:rgb(189, 43, 226) ;
+    width: 1520px;
+    justify-content: center;
+   }
+
+   .bg3 ul li{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 20px;
+   }
+   .bg4{
+    width: 1520px;
+   background-color: rgba(12, 1, 1, 0.864);
+   }
+   .p1{
+    font-family: 'Abril Fatface', cursive;
+        font-size: 70px;
+        color: aliceblue;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+   }
+   
+   
+   .box img{
+    height: 250px;
+    
+    padding: 5px;
+   }
+
+   .box{
+    padding: 50px;
+    display: flex;
+    align-content: stretch;
+    justify-content: start;
+ }
+
+ .flex p{
+    padding: 50px;
+       
+    font-family: 'Abril Fatface', cursive;
+        font-size: 25px;
+        color: aliceblue;
+   }
+
+
+   button{
+    color: rgb(255, 255, 255);
+    width:70px;
+    height: 40px;
+    background-color: rgba(58, 58, 218, 0.882);
+    border: 2px solid transparent;
+    position: relative;
+    top: 110px;
+    right: 430px;
+
+   }
+
+   .flex2{
+    width: 1520px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 520px 500px 300px;
+   }
+
+   
+
+  .g1{
+    height: 600px;
+    width: 520px;
+    
+ }
+
+ .g2{
+ background-color: rgb(163, 4, 163);
+    height: 600px;
+    width: 500px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 2px;
+    color: aliceblue;
+    
+
+   }
+
+   .g3{
+    height: 300px;
+    width: 500px;
+   }
+
+   .g4{
+    height: 292px;
+    width: 500px;
+   }
+
+   .h5{
+    background-image: url('11.jpg');
+    background-size: cover;
+    height: 720px;
+    width: 1520px;
+   }
+
+   .list{
+    display: flex;
+    background-color: rgba(14, 1, 1, 0.482);
+    width: 800px;
+    margin-left: 350px;
+    margin-top: 90px;
+    justify-content: center;
+   }
+
+   .h5 ul li{
+    padding: 10px;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+   }
+
+   .dj::after{
+    content: 'MUSIC';
+    color: blueviolet;
+    font-size: 50px;    
+   }
+
+ .dj{
+    background-color:rgba(12, 1, 1, 0.864) ;
+    width: 1480px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    padding: 20px;
+   }
+
+   .last{
+    width: 1520px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 380px 380px 380px 360px;
+   }
+
+   .lst{
+    width: 1520px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 800px 400px 300px;
+   }
+
+   .bluf{
+    color: transparent;
+   }
+   
+  .lt{
+    width: 1520px;
+    background-color: rgba(12, 1, 1, 0.864);
+  } 
+
+  .lt .p5{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+  }
+   
+   .p5::after{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    font-style: italic;
+    content: 'Special Party';
+    color: aliceblue;
+  }
+
+  .p6{
+    color: rgb(187, 12, 226);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .p2{
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 25px;
+    font-size: 20px;
+  }
+
+  .p3{
+    padding-top: 20px;
+    text-align: center;
+    color: aliceblue;
+    font-style: italic;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+  }
+
+  .p4{
+    text-align: center;
+    color: rgb(19, 142, 218);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    padding-bottom: 40px;
+  }
+
+  footer{
+    width: 1420px;
+    background-color: rgba(30, 37, 29, 0.986);
+    color: aliceblue;
+    text-align: center;
+    padding: 50px;
+  }
+ </style>
+ <body>
+    <header>
+        <div class="bg" id="home">
+        <nav >
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#eventss">Events</a></li>
+                <li><a href="#djs">DJ's</a></li>
+                <li><a href="#booking">Bookings</a></li>
+                <img src="logoplace.png"  id="logo"  alt="">
+            </ul>
+        </nav>
+        <div class="global">GLOBAL</div>
+        <div class="music">MUSIC</div>
+        <div class="circle"><p>13 <br> JUNE</p></div>
+    </header>
+   <div class="bg2">
+    <div class="mento">Event Name -TRINTRA</div>
+    <DIV class="date">13.JUNE.2022</DIV>
+    <DIV class="dance">DANCE FESTIVAL</DIV>
+    
+   </div>
+
+   <div class="bg3">
+    <p class="nyt">OUR NIGHT CLUB</p> 
+    <ul>
+        <li>VIP Zone</li>
+        <li>Bar</li>
+        <li>Restaurant</li>
+        <li>Hookah</li> 
+        <li>Karaoke</li>
+        <li>Dance Floor</li>
+        <li>Discount Cards</li>
+        <li>Lounge Area</li>
+    </ul>
+ </div>
+
+ <div class="bg4" id="eventss">
+  <p class="p1">Latest Events</p> 
+  <div class="flex">
+    <div class="box">
+        <img src="img1.jpg">
+        <p class="date2">Vatos lous Loeos and Friends Friday</p>
+        <p >May 19, 2022</p>
+        <button>More</button>
+       </div>
+    
+       <div class="box">
+        <img src="img2.jpg" >
+        <p class="date2"> 11 Points x Seeret Project-May 1st</p>
+        <p >March 15, 2022</p>
+        <button>More</button>
+       </div>
+    
+       <div class="box">
+        <img src="img3.jpg" >
+        <p class="date2">Jean Pierre's Wynwood Remix</p>
+        <p >February 1, 2022</p>
+        <button>More</button>
+       </div>
+  </div>
+ </div>
+ <div class="flex2">
+
+    <img src="img9.jpg" class="g1"  alt="">
+    
+    <div class="g2"><div class="bluf">Lorem ipsum dolor sit, amet consectetur adipisicinepellat libero voluptatem unt voluptas, inventore ab reprehenderit!</div><h2>Lorem ipsum dolor sit amet.</h2><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore ut excepturi consequuntur perspiciatis, iste maiores sint, dolore at, ab suscipit quaerat dolor delectus ratione veritatis? Magni nulla praesentium architecto aut commodi, odio earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem asperiores fuga sed totam temporibus enim possimus sunt laboriosam delectus iste eligendi tempore amet harum, praesentium cupiditate itaque aspernatur commodi. Aliquam? <br>
+    <h2>Lorem ipsum dolor sit amet.</h2><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore ut excepturi consequuntur perspiciatis, iste maiores sint, dolore at, ab suscipit quaerat dolor delectus ratus sunt laboriosam delectus iste eligendi tempore amet harum, praesentium cupiditate itaque aspernatur commodi. Aliquam?</div>
+
+
+    <div><img class="g3" src="img7.jpg" alt="">
+
+
+    <div><img class="g4"  src="img4.jpg" ></div></div>
+ </div>
+ <div class="h5">
+    <p class="p1">Services</p> 
+    <div class="list">
+        <ul>
+            <li>VIP Zone</li>
+            <li>Bar</li>
+            <li>Restaurant</li>
+            <li>Hookah</li> 
+            <li>Karaoke</li>
+            <li>Dance Floor</li>
+            <li>Discount Cards</li>
+            <li>Lounge Area</li>
+        </ul>
+    
+        <ul>
+            <li>VIP Zone</li>
+            <li>Bar</li>
+            <li>Restaurant</li>
+            <li>Hookah</li> 
+            <li>Karaoke</li>
+            <li>Dance Floor</li>
+            <li>Discount Cards</li>
+            <li>Lounge Area</li>
+        </ul>
+    </div>
+ </div>
+
+  <div class="dj" id="djs">
+    The best DJ'S and 
+ </div>
+ <div class="last">
+    <div><img src="15.jpg" height="400px" width="380px"></div>
+    <div class="i">
+    
+    <img height="400px" width="380px" src="img8.jpg" ></div>
+    <div>
+        
+    <img src="14.jpg" height="400px" width="380px"></div>
+    <div>
+        
+    <img src="img10.jpg" height="400px" width="380px"></div>
+
+ </div>
+ <div class="lst">
+    <div ><img src="12.jpg" width="800px" height="400px" ></div>
+
+  <div><img src="img6.jpg" width="400px" height="400px" ></div>
+
+  <div><img src="18.jpg" width="320px" height="400px" ></div>
+ </div>
+
+ <div class="lt" id="booking">
+ <p class="p5">Tonight </p>
+ <p class="p6">Booking Avaiable</p>
+ <pre class="p2">Lorem ipconsectetur adipisicing elit. Tempora   qui mollitia quaerat maiores
+ adipisci commodi culpa perspiciatis dolores est eveniet eum dicta error ex ducimus eligendi
+ similique quod deleniti ab?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ Soluta delectus nam eius tempore maxime enim earum hic. Eum iusto explicabo dolorum molestias
+ nobis, aperiam quas corporis est unde veritatis laborum!</pre>
+
+ <p class="p3">Call Night Club</p>
+ <p class="p4">(1) 358-07-88</p>
+  </div>
+
+ <footer>
+    sample text. click to select the box. click again or double <br> click  to start editing the text.
+  </footer>
+</body>
+</html>
